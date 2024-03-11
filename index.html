@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
+   <link rel="stylesheet" href="./script.js">
+   <link rel="shortcut icon" href="./assets/image/Cv Vector Design Images, Vector Cv Icon, Cv Icons, Cv Icon, Resume PNG Image For Free Download.jpeg" type="image/x-icon">
+    <title>Portfolio</title>
+</head>
+<body>
+   <!--liste d'adresse-->
+    <header> 
+    <figure>
+        <a href="https://lens.google.com/search?ep=gsbubb&hl=fr&re=df&p=AbrfA8pXltbW4r_TEDWPe-fhaFccuQ9HIZtja2fWGAelm1AZ1bl5Gv9NbkTC7SHLnH6SvlC3ZO2wMczsHzMi7_R5RLfXVFtE6vNW78gKw16PURgUxRmw7UMtxXKAV39w0E-7DViJPwaJ0MzthJtOt_CIJxDKr4T6KOdnzB42JK88WgyhZsq3AQ29gWtTx_MfMICeVc6pqp0LxtMidGgXKQWJMwTqk70Jj7YBfDPIkEVSaMjXmIAwjCsM14h6sHoF6tqff-4Fva1MfrCg7LCgkjtJsv0no19Zqde1QHrRHBzH08iOAjZ27GrrWwhoia6ZHEo%3D#lns=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsIkVrY0tKR0ZpTm1NM01XRmlMV1kwTURndE5EUmxOeTFoWW1WaUxXSXhOemcxT0RnelpEYzFPUklmU1Y5VlExWmlMVU5KTm5kV1RVbG5SM0JuU1V4dVVERkpTMDlpV1hOU1p3PT0iXQ=="><img src="./assets/image/homme.png" alt="Image d'un homme roux barbue"></a>
+    </figure>
+    <h1 class="title"> Victor Sannier</h1><!--Rajouter le css pour la présentation-->
+    <h2 class="subtitle"> Apprenti dévellopeur web</h2>
+    <address class="address">
+        <div class="address_link_container">
+            <a href="https://www.google.fr/maps/dir//49.4403663,1.0933327/@49.4405788,1.0931377,18.65z?entry=ttu" onclick="window.open(this.href);return false">Pl. de la Cathédrale, 76000 Rouen</a>
+        </div>
+        <div class="address_link_container text-center">
+            <a href="mailto:sanniervictor@gmail.com" onclick="window.open(this.href);return false">sanniervictor@gmail.com</a>
+        </div>
+        <div class="address_link_container text-right">
+            <a href="tel:0608060806"  onclick="window.open(this.href);return false">0608060806</a>
+        </div>
+    </address>
+</header>
+<main>
+    <body> 
+      <section>
+         <!--presentation-->
+         <div class="presentation">
+            <h2>Voici une présentation</h2>
+            <p>Bonjour, je me présente je me nomme Victor Sannier, je suis actuellement une formation au sein du cef afin</p>
+            <p>d'apprendre dans le milieu du dévellopement web. J'ai rejoins cette formation depuis septembre ce qui m'a permis</p>
+            <p>de dévelloper mes compétences. Dans la suite de cette page il y aura des liens pour accéder à mon cv, liens pour mes réseaux</p>
+            <p>, mes projets ou un formulaire lié à mon email.</p>
+         </div>
+      </section>
+      <br>
+      <section>
+         <!--cahier des charges-->
+         <h2>A présent je vais vous montrer un exemple de cahier des charges que j'ai réalisé</h2>
+         <p>cliquer sur le bouton afin d'y accéder</p>
+            <button class="button-8" role="button" >accès</button>
+      </section>
+      <!--erreur-->  
+      <div  id="myDiv"  style="display: none;" class="mt-4 mx-auto max-w-4xl">        
+         <div class="rounded-md bg-red-50 p-4">
+           <div class="flex">
+             <div class="flex-shrink-0">
+               <svg class="h-5 w-5 text-red-400" x-description="Heroicon name: mini/x-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd"></path>
+               </svg>
+             </div>
+             <div class="ml-3">
+               <h3 class="text-sm font-medium text-red-800">Tous les champs doivent être remplis</h3>
+             </div>
+           </div>
+         </div>          
+       </div>
+       <!--Formulaire-->
+              <form action="#" id="myForm" name="form" method="post" onsubmit=" return validateForm()"  class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                <div>
+                  <label for="prenom" class="block text-sm font-medium text-warm-gray-900">Prénom</label>
+                  <div class="mt-1">
+                    <input type="text" name="name" id="name" autocomplete="given-name" class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500">
+                  </div>
+                </div>
+                <div>
+                  <label for="nom" class="block text-sm font-medium text-warm-gray-900">Nom</label>
+                  <div class="mt-1">
+                    <input type="text" name="surname" id="surname" autocomplete="family-name" class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500">
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <div class="flex justify-between">
+                    <label for="message" class="block text-sm font-medium text-warm-gray-900">Commentaire</label>
+                    <span id="message-max" class="text-sm text-warm-gray-500">Max. 500 caractères</span>
+                  </div>
+                  <div class="mt-1">
+                    <textarea id="message" name="message" rows="4" maxlength="500" class="block w-full rounded-md border-warm-gray-300 py-3 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500" aria-describedby="message-max"></textarea>
+                  </div>
+                </div>
+                <div class="sm:col-span-2 sm:flex sm:justify-end">
+                  <button type="submit" onsubmit="return myEmail()" name="validate" class="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-teal-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 sm:w-auto">
+                    Envoyer
+                  </button>
+                </div>
+              </form>
+              <!--partie js-->
+              <script>
+                               function validateForm()                                 
+               { 
+                var name = document.forms["myForm"]["name"];         
+                   if (name.value == ""){ 
+                       document.getElementById("myDiv").style.display = "block";  
+                       name.focus(); 
+                       return false; 
+
+                   }else{
+                       document.getElementById('myForm').innerHTML=""; 
+                   }
+                }
+                        function validateForm()
+                {
+                  var surname = document.forms["myForm"]["surname"];         
+                   if (surname.value == ""){ 
+                       document.getElementById("myDiv").style.display = "block";  
+                       surname.focus(); 
+                       return false; 
+                   }else{
+                       document.getElementById('myForm').innerHTML=""; 
+                   }
+                }
+                      
+                        function validateForm()
+                {
+                  var message = document.forms["myForm"]["message"];         
+                   if (message.value == ""){ 
+                       document.getElementById("myDiv").style.display = "block";  
+                       message.focus(); 
+                       return false; 
+
+                   }else{
+                       document.getElementById('myForm').innerHTML=""; 
+                   }                   
+                }
+
+                       function myEmail(){
+                       return mail('sanniervictor@gmail.com', 'Envoi depuis la page');
+                       if (retour);
+                       }
+
+              </script>
+              <!--partie css-->
+              <style>
+
+   .address{
+      color:#76f9ee;
+   }
+                
+ @font-face {
+    font-family: "Lato-BlackItalic";
+    src: url(../font/Lato-BlackItalic.woff);
+    src: url(../font/Lato-BlackItalic.ttf) format("truetype");
+ }
+
+ @font-face {
+    font-family: "Raleway-VariableFont";
+    src: url(../font/Raleway-VariableFont_wght.woff);
+    src: url(../font/Raleway-VariableFont_wght.ttf);
+ }
+
+ h1,
+ h3 {
+    font-family: "Lato-BlackItalic";
+ }
+
+ .category {
+    border: 1px solid beige; padding: 5px;
+    background-color: beige;
+    width: 210px;
+    height: 60px;
+ }
+
+ p {
+    font: "Raleway-VariableFont";
+ }
+ 
+ header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.text-center {
+    text-align: center;
+ }
+
+ .text-right {
+    text-align: right;
+ }
+
+ .text-left {
+    text-align: left;
+ }
+
+ footer img {
+   width: 50px;
+   height: 50px;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+ figure {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
+   border-radius: 50%;
+   box-shadow: 0 0 30px;
+   margin-top: 40px;
+   background-color: #e7e7e7;
+ }
+
+ figure img {
+   width: 120px;
+   height: 120px;
+   object-fit: cover;
+   border-radius: 50%;
+ }
+
+ .logo_reseaux_sociaux :hover{
+    opacity: 0.5;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+ }
+
+ html {
+   background-color: #c0c0c0;
+ }
+
+ .button-8 {
+              background-color: #e1ecf4;
+              border-radius: 3px;
+              border: 1px solid #7aa7c7;
+              box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+              box-sizing: border-box;
+              color: #39739d;
+              cursor: pointer;
+              display: inline-block;
+              font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 1.15385;
+              margin: 0;
+              outline: none;
+              padding: 8px .8em;
+              position: relative;
+              text-align: center;
+              text-decoration: none;
+              user-select: none;
+              -webkit-user-select: none;
+              touch-action: manipulation;
+              vertical-align: baseline;
+              white-space: nowrap;
+            }
+            
+            .button-8:hover,
+            .button-8:focus {
+              background-color: #b3d3ea;
+              color: #2c5777;
+            }
+            
+            .button-8:focus {
+              box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+            }
+            
+            .button-8:active {
+              background-color: #a0c7e4;
+              box-shadow: none;
+              color: #2c5777;
+            }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+</main>
+<footer>
+    <section class="text-center">
+        <p class="date" id="date">Dernière mise à jour le 11/03/2024</p><!--J'ai remplacé le logo twitter par le nouveau-->
+         <div class="logo_reseaux_sociaux">
+            <a href="https://twitter.com/" onclick="window.open(this.href);return false"><img src="assets/image/x-logo-twitter-elon-musk.webp" alt="logo X"></a>
+            <a href="https://fr.linkedin.com/" onclick="window.open(this.href);return false"><img src="assets/image/linkdin.jpeg" alt="logo linkdin"></a>
+            <a href="https://github.com/Slapsho/test-CV" onclick="window.open(this.href);return false"><img src="assets/image/github.jpeg" alt="logo github"></a>
+         </div>
+    </section>
+</footer>
+</body>
+</html>
