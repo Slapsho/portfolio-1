@@ -1,41 +1,24 @@
-function validateForm()                                 
-{ 
- var name = document.forms["myForm"]["name"];         
-    if (name.value == ""){ 
-        document.getElementById("myDiv").style.display = "block";  
-        name.focus(); 
-        return false; 
+let variable = document.querySelector("myForm"); 
 
-    }else{
-        document.getElementById('myForm').innerHTML=""; 
+function createerrorMessage() {
+    let Name = document.querySelector("Name").value;
+    let Surname = document.querySelector("Surname").value; 
+    let Message = document.querySelector("Message").value; 
+
+    if (Name === "" || Surname === "" || Message === "") {
+        document.getElementById("errorMessage").style.display = "block";
+        console.log("errorMessage");
+    } else {
+        createComment(Name, Surname, Message);
+        document.getElementById("errorMessage").style.display = "none";
     }
- }
-         function validateForm()
- {
-   var surname = document.forms["myForm"]["surname"];         
-    if (surname.value == ""){ 
-        document.getElementById("myDiv").style.display = "block";  
-        surname.focus(); 
-        return false; 
-    }else{
-        document.getElementById('myForm').innerHTML=""; 
-    }
- }
-       
-         function validateForm()
- {
-   var message = document.forms["myForm"]["message"];         
-    if (message.value == ""){ 
-        document.getElementById("myDiv").style.display = "block";  
-        message.focus(); 
-        return false; 
+};
 
-    }else{
-        document.getElementById('myForm').innerHTML=""; 
-    }                   
- }
+function createComment(Name, Surname, Message) {
+    let myComment = document.querySelector("myComment");
+    let newDiv = document.createElement("div");
 
-        function myEmail(){
-        return mail('sanniervictor@gmail.com', 'Envoi depuis la page');
-        if (retour);
-        }
+    newDiv.innerHTML = '${Name}, ${Surname}, ${Message}';
+
+    myComment.appendChild(nouvelleDiv);
+}

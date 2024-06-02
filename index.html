@@ -50,7 +50,7 @@
          <a href="./charges.html" onclick="window.open(this.href);return false"><img src="assets/image/Stationery Design Mockup Vector PNG Images, Book Icon Design  Stationery Icon Vector Design, Book Icons, Icons Icons, Book Clipart PNG Image For Free Download.jpeg" alt="Lien charges"></a>
       </section>
       <!--erreur-->  
-      <div  id="myDiv"  style="display: none;" class="mt-4 mx-auto max-w-4xl">        
+      <div  id="errorMessage"  style="display: none;" class="mt-4 mx-auto max-w-4xl">        
          <div class="rounded-md bg-red-50 p-4">
            <div class="flex">
              <div class="flex-shrink-0">
@@ -65,7 +65,7 @@
          </div>          
        </div>
        <!--Formulaire-->
-              <form action="#" id="myForm" name="form" method="post" onsubmit=" return validateForm()"  class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+              <form action="#" id="myForm" onsubmit="createComment()" name="form" method="post" onsubmit=" return validateForm()"  class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                 <div>
                   <label for="prenom" class="block text-sm font-medium text-warm-gray-900">Prénom</label>
                   <div class="mt-1">
