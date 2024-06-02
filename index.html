@@ -46,7 +46,7 @@
          <!--cahier des charges-->
          <h2>A présent je vais vous montrer un exemple de cahier des charges que j'ai réalisé</h2>
          <p>cliquer sur le bouton afin d'y accéder</p>
-         <a href="./charges.html">CLICK HERE</a>
+         <a href="./charges.html" onclick="window.open(this.href);return false"><img src="assets/image/Stationery Design Mockup Vector PNG Images, Book Icon Design  Stationery Icon Vector Design, Book Icons, Icons Icons, Book Clipart PNG Image For Free Download.jpeg" alt="Lien charges"></a>
       </section>
       <!--erreur-->  
       <div  id="myDiv"  style="display: none;" class="mt-4 mx-auto max-w-4xl">        
@@ -93,50 +93,8 @@
                 </div>
               </form>
               <!--partie js-->
-              <script>
-                               function validateForm()                                 
-               { 
-                var name = document.forms["myForm"]["name"];         
-                   if (name.value == ""){ 
-                       document.getElementById("myDiv").style.display = "block";  
-                       name.focus(); 
-                       return false; 
-
-                   }else{
-                       document.getElementById('myForm').innerHTML=""; 
-                   }
-                }
-                        function validateForm()
-                {
-                  var surname = document.forms["myForm"]["surname"];         
-                   if (surname.value == ""){ 
-                       document.getElementById("myDiv").style.display = "block";  
-                       surname.focus(); 
-                       return false; 
-                   }else{
-                       document.getElementById('myForm').innerHTML=""; 
-                   }
-                }
-                      
-                        function validateForm()
-                {
-                  var message = document.forms["myForm"]["message"];         
-                   if (message.value == ""){ 
-                       document.getElementById("myDiv").style.display = "block";  
-                       message.focus(); 
-                       return false; 
-
-                   }else{
-                       document.getElementById('myForm').innerHTML=""; 
-                   }                   
-                }
-
-                       function myEmail(){
-                       return mail('sanniervictor@gmail.com', 'Envoi depuis la page');
-                       if (retour);
-                       }
-
-              </script>
+              <script src="./app.js">
+                </script>
               <!--partie css-->
               <style>
 
@@ -229,31 +187,6 @@
    background-color: #c0c0c0;
  }
 
- .button-8 {
-              background-color: #e1ecf4;
-              border-radius: 3px;
-              border: 1px solid #7aa7c7;
-              box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
-              box-sizing: border-box;
-              color: #39739d;
-              cursor: pointer;
-              display: inline-block;
-              font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-              font-size: 13px;
-              font-weight: 400;
-              line-height: 1.15385;
-              margin: 0;
-              outline: none;
-              padding: 8px .8em;
-              position: relative;
-              text-align: center;
-              text-decoration: none;
-              user-select: none;
-              -webkit-user-select: none;
-              touch-action: manipulation;
-              vertical-align: baseline;
-              white-space: nowrap;
-            }
             
             .button-8:hover,
             .button-8:focus {
