@@ -1,6 +1,6 @@
 
 .address{
-    color:#76f9ee;
+    color:#03b68f;
  }
               
 @font-face {
@@ -99,7 +99,7 @@ html {
           .button-8:hover,
           .button-8:focus {
             background-color: #b3d3ea;
-            color: #2c5777;
+            color: hsl(222, 36%, 43%);
           }
           
           .button-8:focus {
